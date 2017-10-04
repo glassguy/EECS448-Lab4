@@ -1,0 +1,63 @@
+body {
+  font-family: arial;
+  font-size: 22pt;
+  background-image: url(pokegifs/bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div {
+  /*color: #FFFFFF;*/
+  background: rgba(255, 255, 255, 0.75);
+  width:1300px;
+  height: 900px;
+  margin:0 auto;
+}
+.pokebox {
+  text-align:center;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border-style: solid;
+  border-color: white;
+}
+
+.poke {
+  margin: auto;
+	display: block;
+  width:100%;
+  height:100%;
+}
+
+table #receipt{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #f48c42;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #b7b3b3;
+}
+
+tr:nth-child(odd){
+  background-color: #efefef;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+#pokemon {
+    background-color: #f48c42;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 8px;
+}

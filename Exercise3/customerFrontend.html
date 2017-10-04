@@ -1,0 +1,57 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Exercise3</title>
+      <script type="text/javascript" src="formChecker.js"></script>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <center>
+        <form id = "shopForm" action="customerBackend.php" method="post" onsubmit = "return checkSubmit()">
+          <div id = "log">
+            <h1>Pokémon Black Market Login</h1>
+            Username: <input type = "text" id = "user" name = "user"><br>
+            Password: <input type = "password" id = "pass" name = "pass"><br>
+            <input type = "button" value = "Login" onClick = "verifyUser()"><br>
+          </div>
+          <div id = "shop" hidden>
+            <h1>Welcome to the Pokémon Black Market!</h1>
+            <table>
+              <tr>
+                <td class = "pokebox"><img src="pokegifs/trubbish.gif" alt="Trubbish" class = "poke"></td>
+                <td>
+                  Trubbish, The Trash Bag Pokémon<br><br>
+                  Price: $1 EACH<br>
+                  How many?:<input type = "number" name = "trubNum" id = "trubNum">
+                </td>
+              </tr>
+              <tr>
+                <td class = "pokebox"><img src="pokegifs/pikachu.gif" alt="Pikachu" class = "poke"></td>
+                <td>
+                  Pikachu, The Mouse Pokémon<br><br>
+                  Price: $5 EACH<br>
+                  How many?:<input type = "number" name = "pikaNum" id = "pikaNum">
+                </td>
+              </tr>
+              <tr>
+                <td class = "pokebox"><img src="pokegifs/charizard.gif" alt="Charizard" class = "poke"></td>
+                <td>
+                  Charizard, The Flame Pokémon<br><br>
+                  Price: $20 EACH<br>
+                  How many?:<input type = "number" name = "charNum" id = "charNum">
+                </td>
+              </tr>
+            </table>
+            Shipping Options:<br>
+            <input type = "radio" name = "shipping" value = "sevenday">Free 7 day<br>
+            <input type = "radio" name = "shipping" value = "threeday">$5.00 three day<br>
+            <input type = "radio" name = "shipping" value = "overnight">$50.00 overnight<br>
+            <br>
+            <input type="submit" value="Submit">
+            <!--included onclick to prevent having no username and password when form resets-->
+            <input type="reset" value="Reset and Logout" onclick = "location.reload()">
+          </div>
+        </form>
+      </center>
+  </body>
+</html>
